@@ -1,0 +1,21 @@
+{
+    "expenses": [
+        {
+            "id": 1,
+            "data": "2024-05-12",
+            "account": "Banking",
+            "expenses": [
+                {
+                    "expensesId": "1",
+                    "category": "Clothes",
+                    "amount": "1"
+                },
+                {
+                    "expensesId":"2",
+                    "category":"Garment",
+                    "amount":"2"
+                }
+            ]
+        }
+    ]
+}
