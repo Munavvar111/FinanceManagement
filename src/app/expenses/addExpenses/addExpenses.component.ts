@@ -77,8 +77,23 @@ export class AddExpensesComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.expenseForm.value);
-  }
+    const formattedData = {
+      date: new Date(this.expenseForm.get('date').value).toISOString(),
+      account: this.expenseForm.get('account').value,
+      expenses: this.expenseForm.get('expenses').value.map((expense: any) => ({
+        category: expense.category,
+        amount: Number(expense.amount)
+      }))
+    };
+
+    this.apiService.addExpense(formattedData).subscribe({
+      next: (response: any) => {
+        console.log('Expense added:', response);
+      },
+      error: (error: any) => {
+        console.error('Error adding expense:', error);
+      }
+    });  }
   updateTotalAmount() {
     const expensesArray = this.expenseForm.get('expenses') as FormArray;
     console.log(expensesArray.controls)

@@ -1,21 +1,32 @@
 {
-    "expenses": [
+  "expenses": [
+    {
+      "id": 1,
+      "data": "2024-05-12",
+      "account": "Banking",
+      "expenses": [
         {
-            "id": 1,
-            "data": "2024-05-12",
-            "account": "Banking",
-            "expenses": [
-                {
-                    "expensesId": "1",
-                    "category": "Clothes",
-                    "amount": "1"
-                },
-                {
-                    "expensesId":"2",
-                    "category":"Garment",
-                    "amount":"2"
-                }
-            ]
+          "expensesId": "1",
+          "category": "Clothes",
+          "amount": "1"
+        },
+        {
+          "expensesId": "2",
+          "category": "Garment",
+          "amount": "2"
         }
-    ]
+      ]
+    },
+    {
+      "id": "0c57",
+      "date": "2024-06-11T18:30:00.000Z",
+      "account": "one",
+      "expenses": [
+        {
+          "category": "category",
+          "amount": 123
+        }
+      ]
+    }
+  ]
 }

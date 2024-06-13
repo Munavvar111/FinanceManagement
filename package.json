@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "json:server": "json-server --watch database.json",
+    "json:server": "json-server --watch database.json --port 3000",
     "serve:ssr:FinanceManagement": "node dist/finance-management/server/server.mjs"
   },
   "private": true,
